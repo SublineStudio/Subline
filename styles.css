@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: #f4f4f4;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #222;
+    padding: 15px 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: #f4f4f4;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero .hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+/* Services Section */
+#services {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 50px 20px;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.service-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #222;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* Styles généraux (déjà existants) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: #f4f4f4;
+}
+
+/* Responsive Design: Media Queries */
+@media only screen and (max-width: 768px) {
+    /* Adaptation pour les tablettes et petits écrans */
+    
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero .hero-content {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service-card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact-section form {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adaptation pour les téléphones mobiles */
+    
+    .navbar .logo {
+        font-size: 1.2em;
+    }
+
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    .service-card h3 {
+        font-size: 1.4em;
+    }
+
+    .service-card p {
+        font-size: 0.9em;
+    }
+    
+    .contact-section form {
+        padding: 0 15px;
+    }
+}
+
+
+/* Section Abonnements */
+#abonnements {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#abonnements h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.abonnement-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.abonnement-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.abonnement-card h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.abonnement-card p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.abonnement-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.abonnement-card ul li {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.abonnement-card .btn {
+    padding: 10px 25px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.abonnement-card .btn:hover {
+    background-color: #007acc;
+}
+
+.abonnement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design pour Abonnements */
+@media only screen and (max-width: 768px) {
+    .abonnement-card {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #abonnements h2 {
+        font-size: 2em;
+    }
+
+    .abonnement-card h3 {
+        font-size: 1.5em;
+    }
+
+    .abonnement-card p {
+        font-size: 0.9em;
+    }
+
+    .abonnement-card ul li {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
+}
